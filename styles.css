@@ -51,7 +51,6 @@ a
 .wrapper
 {
     width: 940px;
-    margin: auto;
     padding: 0px 10px;
 }
 .orange
@@ -172,26 +171,26 @@ header nav ul li a
 #possibilities
 {
     background-color: #efefef;
-    padding: 60px 0;
+    padding: 0 0;
 }
 #possibilities article
 {
-    width: 460px;
+    width: 465px;
     height: 270px;
     float: left;
     border-radius: 10px;     
 }
 
-#possibilities article:first-child
-{
-    margin-right: 20px;
+#possibilities article:
+{ 
+    margin
 }
 .overlay
 {
     background: rgba(255, 255, 255, 0.90);
     height: 100%;
     width: 190px;
-    padding: 0.5px;
+    padding-left: 20px;
     border-radius: 10px 0 0 10px;
     text-align: center;
 }
@@ -292,31 +291,52 @@ footer h1
 .container {
     width: 800px;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
   /* ------ */
-@media all and (max-width: 860px) {
+@media all and (max-width: 1000px) {
   
     .container {
-      width: 500px;
+        width: 100%;
+        min-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 0 auto;
     }
-    
+
+    .wrapper {
+        width: 100%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .overlay {
+        width: 100%;
+        height: auto;
+    }
+
 }
+
+@media all and (max-width: 750px) { 
   
-@media all and (max-width: 560px) {
-    
     .container {
-      width: 100%;
+        width: 80%;
+        
+        padding: 10%;
     }
-    
-}
-  
- @media all and (max-width: 360px) {
-    
-    /* Header */
-    header .container { text-align: center; }
-    nav { float: none; }
-    
-    /* Footer */
-    footer .container { text-align: center; }
-    footer  { float: none; text-align: center; }
+
+    .wrapper {
+        width: 80%;
+        padding: 10px;
+    }
+
+    .overlay {
+        width: 80%;
+        padding-left: 50px;
+        margin: ;
+    }
+
 }
