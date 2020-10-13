@@ -52,6 +52,7 @@ a
 {
     width: 940px;
     padding: 0px 10px;
+    border-radius: 10px;
 }
 .orange
 {
@@ -180,18 +181,13 @@ header nav ul li a
     float: left;
     border-radius: 10px;     
 }
-
-#possibilities article:
-{ 
-    margin
-}
 .overlay
 {
     background: rgba(255, 255, 255, 0.90);
     height: 100%;
     width: 190px;
-    padding-left: 20px;
-    border-radius: 10px 0 0 10px;
+    padding-left: 0px;
+    border-radius: 10px 0px 0px 10px;
     text-align: center;
 }
 article h4
@@ -201,12 +197,13 @@ article h4
     text-transform: uppercase;
     margin-bottom: 20px;
     text-align: center;
+    border-radius: 10px;
 
 }
-#possibilities p
+#possibilities 
 {
     text-align: center;
-    margin-bottom: 20px;
+    margin:0px 20px 20px 0px;
 
 }
 .button-2
@@ -324,19 +321,18 @@ footer h1
   
     .container {
         width: 80%;
-        
         padding: 10%;
     }
 
     .wrapper {
         width: 80%;
         padding: 10px;
+        margin: 10px auto;
     }
 
     .overlay {
         width: 80%;
-        padding-left: 50px;
-        margin: ;
+        padding:0px 20px;
     }
-
+  
 }
